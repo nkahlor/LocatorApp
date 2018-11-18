@@ -58,6 +58,33 @@ namespace LocatorApp {
         protected global::System.Web.UI.WebControls.TextBox Password_Text;
         
         /// <summary>
+        /// Captcha_Img control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Captcha_Img;
+        
+        /// <summary>
+        /// Captcha_Lbl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Captcha_Lbl;
+        
+        /// <summary>
+        /// Captcha_Text control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Captcha_Text;
+        
+        /// <summary>
         /// Login_Btn control.
         /// </summary>
         /// <remarks>
@@ -65,5 +92,14 @@ namespace LocatorApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Login_Btn;
+        
+        /// <summary>
+        /// Redo_Captcha_Btn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Redo_Captcha_Btn;
     }
 }
