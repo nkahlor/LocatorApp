@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using LocalCrypto;
 
 namespace LocatorApp
 {
@@ -27,7 +28,7 @@ namespace LocatorApp
             // Create cookie to remember this user
             HttpCookie memberCookie = new HttpCookie("memberCookie");
             memberCookie["username"] = Username_Text.Text;
-            memberCookie["password"] = Password_Text.Text;
+            memberCookie["password"] = LocalCrypto.Cryptography.Hash( Password_Text.Text );
             memberCookie.Expires = DateTime.Now.AddMonths(6);
             Response.Cookies.Add(memberCookie);
             Response.Redirect("Member.aspx");
