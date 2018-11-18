@@ -39,7 +39,7 @@ namespace LocatorApp
             Application [ SESSION_COUNT ] = count;
 
 
-            Response.Write ( "<hr />You are session #" + count );
+            Response.Write ( "<hr />New session detected: You are Session #" + count );
         }
 
         void Session_End ( object sender, EventArgs e )
