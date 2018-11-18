@@ -284,9 +284,11 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\ImageVerifySvc\" />
+    <ProjectReference Include="..\LocalCrypto\LocalCrypto.csproj">
+      <Project>{610c444c-cf37-4a19-b02a-497d11571a2e}</Project>
+      <Name>LocalCrypto</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

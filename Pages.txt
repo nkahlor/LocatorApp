@@ -1,0 +1,52 @@
+Remote Service Layer (Project 9):
+make sure required services are up and running
+http://webstrar25.fulton.asu.edu/ currently gives errors when trying to use most services
+Page 2 - OK
+Page 3 - SERVER ERROR on all services (Page 0 RESTful services, page 1 WSDL services)
+Page 6 - SERVER ERROR on all services (Page 4 RESTful services, page 5 WSDL services)
+Page 7 - SERVER ERROR on all services (Page 4 RESTful services, page 5 WSDL services)
+
+
+
+Directory Table Page (Project 9): 
+name of component
+what it does
+default test case
+TryIt Input, Control, and Output
+author
+
+
+
+
+
+Default page (Project 9):
+Shows overview of services offered and test cases
+Has login buttons for members and staff
+
+
+
+
+
+Member's Page (Project 10):
+user can input
+	State(XX)
+	Zip Code(XXXXX)
+Page will store these values per-user
+
+1. Get crime rank from SortStatesByCrimeRank
+2. Get locality of zipcode
+3. Get week weather forecast for ZIP code
+3. Show nearest Store from ZIP Code
+
+
+
+
+
+Staff page (Project 10):
+staff can view list of users and hashed passwords
+has options to delete user by index
+has options to add user with name and password
+
+Must include default staff member
+username: TA
+password: Cse445ta!
