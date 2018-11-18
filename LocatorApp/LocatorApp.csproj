@@ -252,6 +252,7 @@
     <Compile Include="Staff.aspx.designer.cs">
       <DependentUpon>Staff.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DataManager.cs" />
     <Compile Include="StaffLogin.aspx.cs">
       <DependentUpon>StaffLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -259,7 +260,6 @@
     <Compile Include="StaffLogin.aspx.designer.cs">
       <DependentUpon>StaffLogin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DataManager.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

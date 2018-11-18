@@ -8,8 +8,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-        </div>
+        <h1>Staff Page</h1>
     </form>
 </body>
 </html>

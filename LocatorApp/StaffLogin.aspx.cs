@@ -13,5 +13,15 @@ namespace LocatorApp
         {
 
         }
+
+        protected void Login_Btn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Redo_Captcha_Btn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
