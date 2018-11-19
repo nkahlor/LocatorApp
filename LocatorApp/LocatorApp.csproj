@@ -115,6 +115,7 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="App_Data\member.xsl" />
     <Content Include="App_Data\Members.xml" />
     <Content Include="App_Data\Staff.xml" />
     <Content Include="Contact.aspx" />
