@@ -9,12 +9,9 @@ Page 7 - SERVER ERROR on all services (Page 4 RESTful services, page 5 WSDL serv
 
 
 Directory Table Page (Project 9): 
-name of component
 what it does
 default test case
 TryIt Input, Control, and Output
-author
-
 
 
 
