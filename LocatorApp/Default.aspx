@@ -12,12 +12,7 @@
         <p>
             <asp:Button ID="Member_Btn" runat="server" Text="Members" Width="150px" OnClick="Member_Btn_Click" />
             <asp:Button ID="Staff_Btn" runat="server" Text="Staff" Width="150px" OnClick="Staff_Btn_Click" />
-            <asp:Button ID="Directory_Btn" runat="server" Text="Service Directory" Width="150px" OnClick="Directory_Btn_Click" />
         </p>
-        <p>
-            This Application will request the following input from you to match you with an area:</p>
-        <p>
-            &nbsp;</p>
         <p>Developed by Nick Kahlor and Scott Molt</p>
     </div>
     
@@ -199,6 +194,8 @@ page5 is Scott's WSDL services
 page6 is Scott's TryIt Page for elective services
 <br>
 page7 is Scott's TryIt Page for required services
+    <br />
+page8 is Scott's TryIt Page for the Hash DLL
 </p>
 </body>
 </html>
