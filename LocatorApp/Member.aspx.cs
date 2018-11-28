@@ -52,7 +52,6 @@ namespace LocatorApp
 
             Webstrar25ServiceReference.Service1Client client = new Webstrar25ServiceReference.Service1Client ( );
             
-
             //1. Get crime rank from SortStatesByCrimeRank
             double crimeResponse = client.CrimeIndexService ( state );
             CrimeLabel.Text = state + " has a crime index of " + crimeResponse.ToString();
@@ -66,9 +65,9 @@ namespace LocatorApp
                 WebClient proxy = new WebClient ( );
                 string answer = proxy.DownloadString ( uri );
                 // Shed the quotes from the JSON format
-                LocalityLabel.Text = answer.Trim ( new char [] { '"' } );
+                LocalityLabel.Text = zip + "'s locality type is: " + answer.Trim ( new char [] { '"' } );
             } else {
-                LocalityLabel.Text = "Invalid zipcode";
+                LocalityLabel.Text = zip + " is an invalid zipcode";
             }
 
             //3. Get week weather forecast for ZIP code

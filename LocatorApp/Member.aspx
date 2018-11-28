@@ -7,6 +7,12 @@
 <body>
     <form id="form1" runat="server">
         <h1>Member's Page</h1>
+        <asp:Label ID="Description" runat="server" Text="Instructions: Enter your State and ZIP code below. They may be saved and loaded using cookies."></asp:Label>
+        <br />
+        <asp:Label ID="Label1" runat="server" Text="This page can show information on how much crime your state has from 0-1, the Locality of your ZIP code (City, Cuburb, Rural), the nearest store in that ZIP code, and the weather in that ZIP code for the next week."></asp:Label>
+        <br />
+        <asp:Label ID="Label2" runat="server" Text="Some test inputs are {AZ, 85201} {PA, 15001} {NY, 10004}"></asp:Label>
+        <br /><br /><br />
         <asp:Label ID="Member_Info_Lbl" runat="server" Text="Location Data"></asp:Label>
         <br />
         <asp:Label ID="Member_State_Lbl" runat="server" Text="State"></asp:Label>
