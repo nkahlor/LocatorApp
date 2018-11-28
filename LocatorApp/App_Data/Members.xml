@@ -1,7 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <members>
   <member>
     <username>user</username>
     <password>test</password>
+  </member>
+  <member>
+    <username>TA</username>
+    <password>Cse445ta!</password>
   </member>
 </members>

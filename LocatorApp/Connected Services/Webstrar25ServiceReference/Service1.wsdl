@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://webstrar25.fulton.asu.edu/page1/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://webstrar25.fulton.asu.edu/page1/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://webstrar25.fulton.asu.edu/page1/Service1.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_WeatherService_InputMessage">
+    <wsdl:part name="parameters" element="tns:WeatherService" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WeatherService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WeatherServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CrimeIndexService_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrimeIndexService" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CrimeIndexService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrimeIndexServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_FindNearestStore_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindNearestStore" />
+  </wsdl:message>
+  <wsdl:message name="IService1_FindNearestStore_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindNearestStoreResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetLatLonSeperatedBySpaceFromZip_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLatLonSeperatedBySpaceFromZip" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetLatLonSeperatedBySpaceFromZip_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLatLonSeperatedBySpaceFromZipResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetLatLonSeperatedBySpaceFromCityAndState_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLatLonSeperatedBySpaceFromCityAndState" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetLatLonSeperatedBySpaceFromCityAndState_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLatLonSeperatedBySpaceFromCityAndStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCityStateSeperatedBySpaceFromLatLon_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCityStateSeperatedBySpaceFromLatLon" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCityStateSeperatedBySpaceFromLatLon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCityStateSeperatedBySpaceFromLatLonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TempConverter_InputMessage">
+    <wsdl:part name="parameters" element="tns:TempConverter" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TempConverter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TempConverterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SortStatesByCrimeRates_InputMessage">
+    <wsdl:part name="parameters" element="tns:SortStatesByCrimeRates" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SortStatesByCrimeRates_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SortStatesByCrimeRatesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="WeatherService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WeatherService" message="tns:IService1_WeatherService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WeatherServiceResponse" message="tns:IService1_WeatherService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrimeIndexService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CrimeIndexService" message="tns:IService1_CrimeIndexService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CrimeIndexServiceResponse" message="tns:IService1_CrimeIndexService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindNearestStore">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/FindNearestStore" message="tns:IService1_FindNearestStore_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/FindNearestStoreResponse" message="tns:IService1_FindNearestStore_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLatLonSeperatedBySpaceFromZip">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetLatLonSeperatedBySpaceFromZip" message="tns:IService1_GetLatLonSeperatedBySpaceFromZip_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetLatLonSeperatedBySpaceFromZipResponse" message="tns:IService1_GetLatLonSeperatedBySpaceFromZip_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLatLonSeperatedBySpaceFromCityAndState">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetLatLonSeperatedBySpaceFromCityAndState" message="tns:IService1_GetLatLonSeperatedBySpaceFromCityAndState_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetLatLonSeperatedBySpaceFromCityAndStateResponse" message="tns:IService1_GetLatLonSeperatedBySpaceFromCityAndState_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCityStateSeperatedBySpaceFromLatLon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetCityStateSeperatedBySpaceFromLatLon" message="tns:IService1_GetCityStateSeperatedBySpaceFromLatLon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetCityStateSeperatedBySpaceFromLatLonResponse" message="tns:IService1_GetCityStateSeperatedBySpaceFromLatLon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TempConverter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TempConverter" message="tns:IService1_TempConverter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TempConverterResponse" message="tns:IService1_TempConverter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SortStatesByCrimeRates">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SortStatesByCrimeRates" message="tns:IService1_SortStatesByCrimeRates_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SortStatesByCrimeRatesResponse" message="tns:IService1_SortStatesByCrimeRates_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="WeatherService">
+      <soap:operation soapAction="http://tempuri.org/IService1/WeatherService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrimeIndexService">
+      <soap:operation soapAction="http://tempuri.org/IService1/CrimeIndexService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindNearestStore">
+      <soap:operation soapAction="http://tempuri.org/IService1/FindNearestStore" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLatLonSeperatedBySpaceFromZip">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetLatLonSeperatedBySpaceFromZip" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLatLonSeperatedBySpaceFromCityAndState">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetLatLonSeperatedBySpaceFromCityAndState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityStateSeperatedBySpaceFromLatLon">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetCityStateSeperatedBySpaceFromLatLon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TempConverter">
+      <soap:operation soapAction="http://tempuri.org/IService1/TempConverter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SortStatesByCrimeRates">
+      <soap:operation soapAction="http://tempuri.org/IService1/SortStatesByCrimeRates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://webstrar25.fulton.asu.edu/page1/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

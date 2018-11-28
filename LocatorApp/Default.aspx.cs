@@ -26,12 +26,12 @@ namespace LocatorApp
 
         protected void Staff_Btn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Staff.aspx");
-        }
-
-        protected void Directory_Btn_Click(object sender, EventArgs e)
-        {
-
+            // Check cookies to see if logging in is required
+            HttpCookie staffCookie = Request.Cookies["staffCookie"];
+            if (staffCookie == null || staffCookie["username"] == "")
+                Response.Redirect("StaffLogin.aspx");
+            else
+                Response.Redirect("Staff.aspx");
         }
     }
 }
